@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <title>Password Shield</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="logo.jpg" width="50px" height="60px" alt="" /></li>
+        <li><a href="#" id="name">Password Shield</a></li>
+        <li><a href="#heading" class="nav-items">Home</a></li>
+        <li><a href="#about" class="nav-items">About</a></li>
+      </ul>
+    </nav>
+    <h1>
+      <span id="heading"><b>Password Shield:</b> </span>Unleash Secure and
+      Strong Passwords
+    </h1>
+    <main>
+      <div class="container">
+       <div class="image">
+        <img src="password.jfif" alt="">
+       </div>
+        <div class="form">
+          <form id="passwordForm">
+            <label for="length">Length:</label>
+            <input
+              type="text"
+              for="length"
+              placeholder="Maximum Length is 15"
+              id="length"
+            />
+            <label id="level" for="difficulty">Select Difficulty Level:</label
+            ><br />
+            <label class="radio-label">
+              <input type="radio" id="easy" name="difficulty" value="easy" />
+              Easy
+            </label>
+            <label class="radio-label">
+              <input
+                type="radio"
+                id="medium"
+                name="difficulty"
+                value="medium"
+              />
+              Medium
+            </label>
+            <label class="radio-label">
+              <input type="radio" id="hard" name="difficulty" value="hard" />
+              Hard
+            </label>
+            <button id="generator" onclick="generatePassword()">
+              Generate
+            </button>
+            <br />
+            <label for="pass"><b>Password:</b></label>
+            <input
+              type="text"
+              for="pass"
+              placeholder="Click on Generate Button"
+              id="password"
+            />
+            <br />
+          </form>
+        </div>
+      </div>
+    </main>
+    <section id="about">
+      <div class="about-container">
+        <h2>ABOUT</h2>
+        <p><b>Password Shield project was created by Mukul Rana.</b></p>
+        <p>
+          Welcome to our Password Shield website. This is an HTML, CSS, and
+          JavaScript project aimed at providing you with a secure and convenient
+          way to generate strong passwords. With the increasing number of online
+          threats and data breaches, having a strong password is essential to
+          protect your sensitive information. Our password generator tool allows
+          you to customize the complexity and length of the passwords according
+          to your needs. You can choose from easy, medium, or hard difficulty
+          levels, and select the desired password length.
+        </p>
+        <ul id="info">
+          <li><b>1.Easy: </b> Generates passwords using letters only.</li>
+          <br />
+          <li>
+            <b>2.Medium: </b> Generates passwords using a combination of numbers
+            and letters.
+          </li>
+          <br />
+          <li>
+            <b>3.Strong: </b> Generates passwords using a combination of special
+            characters, letters, and numbers.
+          </li>
+        </ul>
+
+        <p>
+          We prioritize your security and privacy. Rest assured that all
+          passwords generated on our website are not stored or saved anywhere.
+          They are generated on-the-fly and provided to you for immediate use.
+          Whether you need a password for your email, social media accounts,
+          online banking, or any other online service, our Password Shield
+          website, built using HTML, CSS, and JavaScript, is here to help you
+          create strong and secure passwords with ease.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <p>Made with <span class="heart-icon">&hearts;</span> by Mukul Rana</p>
+        <p>&copy; 2023 All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
